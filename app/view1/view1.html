@@ -1,4 +1,15 @@
 
+<div ng-controller = "View1Ctrl">
 <p >This is the partial for view 1.
-{{birthdaytext}}
+{{birthdaytext}} {{date}}  
+ <br>
+    Enter your Birthday(dd/mm/yyyy): <input type="text" ng-model="birthdaytext" /><br />
+   
+    <button ng-click="getday()">GetDay</button>
+
+    Day: <input type = "text" value="{{resultday}}"/> <br />
+    AKAN Name: <input type = "text" value="{{resultname}}"/> <br />
+
 </p>
+
+</div>
