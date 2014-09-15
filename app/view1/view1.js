@@ -30,9 +30,12 @@ angular.module('myApp.view1', ['ngRoute'])
 		$scope.resultday = $scope.d[$scope.daynumber];
 		$scope.dnmale = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 		$scope.dnfemale = ["Akosua", "Adwoa", "Abena", "Akua", "Yaa", "Afia", "Amma"];
-		$scope.gender = 'M';
+		$scope.gender;
 		if($scope.gender=="M"){
 			$scope.resultname = $scope.dnmale[$scope.daynumber];
+		}
+		else{
+			$scope.resultname = $scope.dnfemale[$scope.daynumber];
 		}
 	};
 
