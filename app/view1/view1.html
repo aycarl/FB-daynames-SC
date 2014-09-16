@@ -21,24 +21,23 @@ window.fbAsyncInit = function() {
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<p >This is the partial for view 1.
-{{birthdaytext}} {{date}}  
+<p > 
  <br>
-    Enter your Birthday(dd/mm/yyyy): <input type="text" ng-model="birthdaytext" /><br />
+    This is your Birthday(mm/dd/yyyy): <input type="text" ng-model="birthdaytext" disabled = "true" /><br />
     
    	 Gender: 
 	<br>
-   	 <input type = "radio" name = "gender" value= "Male" ng-model = "gender" /> Male
+   	 <input type = "radio" name = "gender" value= "male" ng-model = "gender" disabled = "true" /> Male
    <br>
-   	 <input type = "radio" name = "gender" value= "Female" ng-model = "gender" /> Female
+   	 <input type = "radio" name = "gender" value= "female" ng-model = "gender" disabled = "true" /> Female
 
  
     <br />
    
-    <button ng-click="getday()">GetDay</button>
+    Click this to get your Akan Day Name=><button ng-click="getday()">GetDay</button> <br />
 
-    Day: <input type = "text" value="{{resultday}}"/> <br />
-    AKAN Name: <input type = "text" value="{{resultname}}"/> <br />
+    Day: <input type = "text" value="{{resultday}}" disabled = "true"/> <br />
+    AKAN Name: <input type = "text" value="{{resultname}}" disabled = "true"/> <br />
 
 </p>
 </body>
