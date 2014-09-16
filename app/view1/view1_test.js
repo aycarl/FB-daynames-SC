@@ -21,13 +21,34 @@ describe('myApp.view1 module', function() {
 
     }));
 
-    it('should define a resultday number in the scope', inject(function($controller){
+
+    //It is defined in the fb script
+    it('should not be defined a gender in the scope but rather in FB script', inject(function($controller){
 
       var mockScope={},
-        ResultDay=$controller('View1Ctrl',{$scope:mockScope});
-        expect(mockScope.resultday).toBeDefined();
+        GenderCtrl=$controller('View1Ctrl',{$scope:mockScope});
+        expect(mockScope.gender).toBeUndefined();
     }));
 
+    it('should not be defined a resultday in the scope but rather in the fb script', inject(function($controller){
+
+      var mockScope={},
+        ResultDayCtrl=$controller('View1Ctrl',{$scope:mockScope});
+        expect(mockScope.resultday).toBeUndefined();
+    }));
+
+    it('should not be defined a daynumber in the scope but rather in the fb script', inject(function($controller){
+
+      var mockScope={},
+        DayNumberCtrl=$controller('View1Ctrl',{$scope:mockScope});
+        expect(mockScope.daynumber).toBeUndefined();
+    }));
+
+    // it('is working', inject(function(){
+    //   var mockScope={},
+    //   LoginCtrl=$controller('View1Ctrl',{$scope:mockScope})
+    //     expect(checkLoginState).toBeTrue();
+    // }));
   
 });
 
