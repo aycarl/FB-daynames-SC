@@ -33,7 +33,7 @@ angular.module('myApp.view1', ['ngRoute'])
 		$scope.dnmale = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 		$scope.dnfemale = ["Akosua", "Adwoa", "Abena", "Akua", "Yaa", "Afia", "Amma"];
 		$scope.gender;
-		if($scope.gender=="M"){
+		if($scope.gender=="Male"){
 			$scope.resultname = $scope.dnmale[$scope.daynumber];
 		}
 		else{

@@ -21,6 +21,13 @@ describe('myApp.view1 module', function() {
 
     }));
 
+    it('should define a resultday number in the scope', inject(function($controller){
+
+      var mockScope={},
+        ResultDay=$controller('View1Ctrl',{$scope:mockScope});
+        expect(mockScope.resultday).toBeDefined();
+    }));
+
   
 });
 
