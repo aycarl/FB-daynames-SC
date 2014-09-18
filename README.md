@@ -59,6 +59,7 @@ npm start
 ```
 
 Now browse to the app at `http://localhost:8000/app/index.html`.
+In the event that it fails try `http://localhost:8080/app/index.html`.
 
 
 
